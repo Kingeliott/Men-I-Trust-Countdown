@@ -1,0 +1,249 @@
+body {
+    width: 100vw; /* Full width of the viewport */
+    height: 100vh; /* Full height of the viewport */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Centers the content horizontally */
+    align-items: center; /* Centers the content vertically */
+    background-image: url(images/logo2.jfif);
+    background-size: contain; /* Ensures the background fits inside */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #FEF212; /* Yellow background color */
+}
+
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    color: beige; /* Base text color */
+    text-shadow:
+        1px 1px 3px rgba(255, 0, 0, 0.8),   /* Red shadow */
+        2px 2px 6px rgba(255, 165, 0, 0.8), /* Orange shadow */
+        3px 3px 9px rgba(255, 255, 0, 0.8), /* Yellow shadow */
+        4px 4px 12px rgba(0, 255, 0, 0.8),  /* Green shadow */
+        5px 5px 15px rgba(0, 0, 255, 0.8),  /* Blue shadow */
+        6px 6px 18px rgba(75, 0, 130, 0.8); /* Indigo shadow */
+    text-align: left; /* Aligns text inside the h2 to the left */
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+
+@keyframes containerDance {
+    0% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(-10px);
+    }
+    50% {
+        transform: translateY(0);
+    }
+    75% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Apply to .container */
+.container {
+    width: 100vh;
+    height: 90vh;
+    background-size: contain;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    align-items: flex-start;
+    justify-content: left;
+    position: absolute;
+    left: 30px;
+    animation: containerDance 2s ease-in-out infinite; /* Apply hop animation */
+}
+
+/* Slideshow container */
+
+
+
+/* Dance Effect for hopping */
+@keyframes dance {
+    0% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(-10px);
+    }
+    50% {
+        transform: translateY(0);
+    }
+    75% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Slideshow Animation for Background Image */
+@keyframes slideshow {
+    0% {
+        background-image: url('images/album.jfif');
+    }
+    25% {
+        background-image: url('images/logo.jpg');
+    }
+    50% {
+        background-image: url('images/logo2.jfif');
+    }
+    75% {
+        background-image: url('images/MITSpotify.jpg');
+    }
+    100% {
+        background-image: url('images/image1.jpg');
+    }
+}
+
+/* Other styles remain the same */
+
+
+
+
+span {
+    font-size: 40px; /* Increase font size */
+    font-weight: bold;
+    color: beige; /* Bright yellow for contrast */
+    display: inline-block; /* Ensures they align properly */
+    min-width: 80px; /* Gives a consistent width for alignment */
+    text-align: center; /* Align text to the left */
+}
+
+/* Remove scrolling */
+html, body {
+    overflow: hidden;  /* Prevents scrolling */
+    margin: 0;
+    padding: 0;
+    width: 100vw; /* Full width of viewport */
+    height: 100vh; /* Full height of viewport */
+}
+/* General button styles */
+button {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #f43716; /* Tomato background color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+   
+}
+#prevBTN {
+position: absolute;
+    left: 800px;
+    top: 50%;
+}
+#playPauseBTN{
+position: absolute;
+    left: 965px;
+    top: 50%;
+}
+#nextBTN {
+position: absolute;
+    left: 1100px;
+    top: 50%;
+}
+/* Button hover effect */
+button:hover {
+    background-color: #FF4500; /* Darker orange-red */
+    transform: scale(1.1);
+}
+
+/* Specific button style adjustments */
+
+
+#playPauseBTN:hover {
+    background-color: #228B22; /* Darker green for Play */
+}
+
+
+#prevBTN:hover {
+    background-color: #4682B4; /* Darker blue for Previous */
+}
+
+
+
+#nextBTN:hover {
+    background-color: #FFA500; /* Darker gold for Next */
+}
+
+/* Add this to the existing CSS */
+
+/* Dancing effect for h1 */
+@keyframes danceH1 {
+    0% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(-10px);
+    }
+    50% {
+        transform: translateY(0);
+    }
+    75% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Apply dance effect to h1 */
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 60px;
+    color: beige;
+    text-shadow:
+        1px 1px 3px rgba(255, 0, 0, 0.8),
+        2px 2px 6px rgba(255, 165, 0, 0.8),
+        3px 3px 9px rgba(255, 255, 0, 0.8),
+        4px 4px 12px rgba(0, 255, 0, 0.8),
+        5px 5px 15px rgba(0, 0, 255, 0.8),
+        6px 6px 18px rgba(75, 0, 130, 0.8);
+    text-align: center;
+    margin-bottom: 20px;
+    position: absolute;
+    top: 0px;
+    left: 58%;
+    transform: translateX(-50%);
+    animation: danceH1 2s ease-in-out infinite; /* Apply the dance animation */
+}
+
+/* Button hop effect */
+@keyframes buttonDance {
+    0% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(-10px);
+    }
+    50% {
+        transform: translateY(0);
+    }
+    75% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Apply to buttons */
+#prevBTN, #playPauseBTN, #nextBTN {
+    animation: buttonDance 2s ease-in-out infinite; /* Apply hop animation */
+}
+
+/* Existing button styles */
